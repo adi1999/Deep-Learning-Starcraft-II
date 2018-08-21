@@ -15,7 +15,7 @@ import keras
 HEADLESS = False
 
 
-class SentdeBot(sc2.BotAI):
+class AdiBot(sc2.BotAI):
     def __init__(self, use_model=False):
         #self.ITERATIONS_PER_MINUTE = 165
 
