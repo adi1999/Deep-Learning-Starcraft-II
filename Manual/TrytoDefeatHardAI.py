@@ -38,6 +38,9 @@ class AdiBot(sc2.BotAI):
 
     async def build_assimilators(self):
         for nexus in self.units(NEXUS).ready:
+       
+       
+       ##try to build more bots
             vaspenes = self.state.vespene_geyser.closer_than(15.0, nexus)
             for vaspene in vaspenes:
                 if not self.can_afford(ASSIMILATOR):
