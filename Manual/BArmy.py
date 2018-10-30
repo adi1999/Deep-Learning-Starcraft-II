@@ -38,6 +38,7 @@ class AdiBot(sc2.BotAI):
                     break
                 if not self.units(ASSIMILATOR).closer_than(1.0, vaspene).exists:
                     await self.do(worker.build(ASSIMILATOR, vaspene))
+                  ##Check this once again
 
     async def expand(self):
         if self.units(NEXUS).amount < 3 and self.can_afford(NEXUS):
