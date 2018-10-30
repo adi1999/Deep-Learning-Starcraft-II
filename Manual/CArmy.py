@@ -38,6 +38,8 @@ class AdiBot(sc2.BotAI):
                 worker = self.select_build_worker(vaspene.position)
                 if worker is None:
                     break
+                 
+                 ##send more bots to dig minerals
                 if not self.units(ASSIMILATOR).closer_than(1.0, vaspene).exists:
                     await self.do(worker.build(ASSIMILATOR, vaspene))
 
