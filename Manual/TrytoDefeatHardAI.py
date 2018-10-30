@@ -40,6 +40,10 @@ class AdiBot(sc2.BotAI):
         for nexus in self.units(NEXUS).ready:
        
        
+       ##Send more bots to fight 
+       
+       
+       
        ##try to build more bots
             vaspenes = self.state.vespene_geyser.closer_than(15.0, nexus)
             for vaspene in vaspenes:
